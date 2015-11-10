@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+     <dimen name="login_margin">10dp</dimen>
+    <dimen name="login_bottom_margin_max">16dp</dimen>
+    <dimen name="login_bottom_width">120dp</dimen>
+    <dimen name="view_margin_small">5dp</dimen>
+    <dimen name="view_margin">10dp</dimen>
+    <dimen name="button_margin">70dp</dimen>
+    <dimen name="button_top_margin">60dp</dimen>
+    <dimen name="login_padding">32dp</dimen>
+    <dimen name="margin_top_welcome">45dp</dimen>
+    <dimen name="login_bottom_margin_min">8dp</dimen>
+    <dimen name="icon_left_margin">135dp</dimen>
+    <dimen name="recycler_view_margin">5dp</dimen>
+    <!-- UI container for Login -->
+    <style name="FormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">32dp</item>
+    </style>
+    <dimen name="padding">15dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="padding_left">10dp</dimen>
+    <dimen name="login_et_padding">32dp</dimen>
+    <dimen name="navigation_image_padding">60dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+
+    <dimen name="vertical_spacing">8dp</dimen>
+    <dimen name="margin_list">10dp</dimen>
+    <dimen name="padding_bottom">15dp</dimen>
+
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="color_indicator_width">5dp</dimen>
+    <dimen name="padding_list_item">5dp</dimen>
+    <dimen name="elevation">10dp</dimen>
+    <dimen name="image_margin">50dp</dimen>
+    <dimen name="padding_welcome_screen">30dp</dimen>
+    <dimen name="layout_top">220dp</dimen>
+    <dimen name="margin_between_views">10dp</dimen>
+    <dimen name="device_os_size">35dp</dimen>
+
+    <dimen name="tv_padding_left">7dp</dimen>
+
+    <integer name="max_char_notes">256</integer>
+</resources>

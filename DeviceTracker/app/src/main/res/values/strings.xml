@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Device User Tracker</string>
+    <string name="application_name">DU Tracker</string>
+
+    <string name="navigation_item1">Device Users</string>
+    <string name="navigation_item2">Tag Devices</string>
+    <string name="navigation_item3">Devices</string>
+    <string name="navigation_item4">Users</string>
+    <string name="navigation_item5">Settings</string>
+    <string name="navigation_item7">Log Out</string>
+    <string name="navigation_item6">Projects</string>
+    <string name="btn_text_logging">Logging In</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="untag_device_title">Untag Devices</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="session_time">Session Time (hrs)</string>
+    <string name="alert_time_interval">Alert Time Interval (mts)</string>
+    <string name="wrong_passwords">Wrong Password Attempts</string>
+    <string name="show_password">Show Password</string>
+    <string name="reset_button">Reset</string>
+    <string name="save_button">Save</string>
+    <string name="default_password">Default Password</string>
+
+    <string name="label_app_name">Device User Tracker</string>
+    <string name="activity_login_username">Username</string>
+    <string name="activity_login_password">Password</string>
+    <string name="activity_old_pwd">Old Password</string>
+    <string name="activity_new_pwd">New Password</string>
+    <string name="activity_confirm_password">Confirm Password</string>
+    <string name="activity_login_keep_me_signed_in">Remember Me</string>
+    <string name="activity_admin">Admin</string>
+    <string name="activity_login_sign_in">Login</string>
+    <string name="activity_welcome_screen">Welcome</string>
+    <string name="activity_about">About</string>
+    <string name="activity_help">Help</string>
+    <string name="device_tracker">Device Tracker</string>
+    <string name="need_help">Sign In Help</string>
+    <string name="login_error_part1">We can\'t find that username and/or password. Try again, or </string>
+    <string name="login_error_part2">Let us help?</string>
+    <string name="activity_login_need_help">Help</string>
+    <string name="about_us">About</string>
+    <string name="cancel_str">Cancel</string>
+    <string name="save_str">Save</string>
+    <string name="activity_device_name">Device Name</string>
+    <string name="activity_mac_address">Mac Address</string>
+    <string name="device_prompt">Choose Device</string>
+    <string name="logout_confirmation_msg">Are you sure you want to log out?</string>
+    <string name="ok_msg">OK</string>
+    <string name="cancel_msg">Cancel</string>
+    <string name="enter_username">Please Enter Username</string>
+    <string name="enter_pwd">Please Enter Password</string>
+    <string name="enter_username_pwd">Please Enter Username and Password</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="invalid_login_parameters">Invalid Username or Password</string>
+    <string name="network_unavailable">This app requires an active internet connection.\nPlease check your network settings and try again</string>
+    <string name="no_network">The Internet connection appears to be offline</string>
+    <string name="request_timed_out">Request Time Out</string>
+    <string name="max_attempt">Maximum number of Login attempts exceeded,\nPlease contact Admin</string>
+    <string name="user_name_not_present">User not found</string>
+    <string name="device_not_registered">The device is not registered with this App,\nPlease contact Admin</string>
+    <string name="device_not_registered_admin">The device is not registered with this App,\nPlease Register</string>
+    <string name="device_inactive">This device “%1$s” is inactive.\nPlease contact Admin.</string>
+    <string name="navigation_drawer_title">Device User Tracker</string>
+    <string name="new_project">Add Project</string>
+    <string name="reset_project">Edit Project</string>
+
+    <!-- Add New User -->
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="admin">Admin</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_user">Add User</string>
+    <string name="user_added_successfully">User “%1$s” added successfully</string>
+    <string name="user_updated_successfully">User “%1$s” updated successfully</string>
+    <string name="user_already_exists">User “%1$s” already exists</string>
+    <string name="user_not_found">User “%1$s” not found</string>
+
+    <!-- Show Users -->
+    <string name="delete_user_confirmation">Are you sure you want to delete user “%1$s” ?</string>
+    <string name="delete_successfull">“%1$s” removed successfully</string>
+    <string name="delete_loggedin_user_confirmation">Deleting the logged in user “%1$s” will sign you out from the app.\nDo you want to continue ?</string>
+    <string name="editing_loggedin_user_confirmation">Making the logged in user “%1$s” inactive will sign you out from the app.\nDo you want to continue ?</string>
+
+    <!-- Reset User -->
+
+    <string name="reset">Reset</string>
+    <string name="reset_user">Edit User</string>
+
+    <!-- Add New Device -->
+
+    <string name="new_device">Add Device</string>
+    <string name="device_name">Device Name</string>
+    <string name="mac_address">Mac Address</string>
+    <string name="os">Device OS</string>
+    <string name="device_already_exists">Device “%1$s” with mac address : “%2$s” already registered</string>
+    <string name="device_added_successfully">Device “%1$s” with Mac address “%2$s” added successfully</string>
+    <string name="device_not_found">Device “%1$s“ not found</string>
+    <string name="device_updated_successfully">Device “%1$s” updated successfully</string>
+    <array name="arr_device_os">
+        <item>Select Device OS</item>
+        <item>Android</item>
+        <item>iOS</item>
+    </array>
+
+    <!-- Show Devices -->
+    <string name="delete_device_confirmation">Are you sure you want to delete device “%1$s” ?</string>
+    <!--Add Project-->
+    <string name="project_name_hint">Project Name</string>
+    <string name="project_description">Project Description :</string>
+    <string name="project_description_hint">Project Description</string>
+    <string name="project_already_exists">Project “%1$s” already exists</string>
+    <string name="delete_project_confirmation">Are you sure you want to delete project “%1$s” ?</string>
+    <string name="project_added_successfully">Project “%1$s” added successfully</string>
+    <string name="update_button">Update</string>
+    <string name="project_updated_successfully">Project “%1$s” updated successfully</string>
+    <string name="project_not_found">Project “%1$s“ not found</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="login_progress_signing_in">Verifying credentials&#8230;</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="password_mismatch">Password and confirmation password do not match</string>
+    <string name="old_password_mismatch">Old Password is incorrect</string>
+    <string name="name">Nick Name</string>
+    <string name="password_change_successful">Password has been updated successfully</string>
+    <string name="user_change_successful">User details has been updated successfully</string>
+    <string name="log_out">Log Out</string>
+    <string name="setting_update_message">Settings updated successfully</string>
+    <string name="progress_bar_message">Loading...</string>
+    <string name="settings_field_max_character">3</string>
+    <string name="settings_field_password_min_character">6</string>
+
+    <!-- Strings related to change password -->
+    <string name="old_pwd">Old Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="change_pwd_title">Change Password</string>
+    <string name="empty_password">Please Enter old password and new password and confirm password </string>
+    <string name="active_user">Active User</string>
+    <string name="active_device">Active Device</string>
+    <string name="reset_device">Edit Device</string>
+
+    <!--Strings related to welcome screen-->
+    <string name="welcome_message">Device User Tracker App is used to keep track of TEKsystems mobile devices. Please ensure you always login to the app before using this device.</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="log_out_message">Log Out</string>
+    <string name="change_password">Change Password</string>
+
+    <!--Strings related to Tag/UnTag devices-->
+    <string name="tag_button">Tag</string>
+    <string name="untag_button">Untag</string>
+    <string name="adapter">Adaptor</string>
+    <string name="charger">Charger</string>
+    <string name="headphone">Headphone</string>
+    <string name="box">Box</string>
+    <string name="note_text">Notes :</string>
+
+    <string-array name="tag_device_os">
+        <item>Select Device OS</item>
+        <item>Android</item>
+        <item>iOS</item>
+    </string-array>
+    <string name="version">OS Version</string>
+    <string name="select_project">Select Project</string>
+    <string name="select_user_name">Select Username</string>
+    <string name="select_device">Select Device</string>
+    <string name="select_device_os">Select Device OS</string>
+
+    <string name="device_tagged_error">Device “%1$s” already tagged to user “%2$s”</string>
+    <string name="devive_not_found">Device “%1$s” not found</string>
+    <string name="user_not_exists">User “%1$s” not found</string>
+    <string name="project_not_exists">Project “%1$s” not found</string>
+    <string name="device_tagged_successfully">Device “%1$s” tagged to user “%2$s” successfully</string>
+    <string name="device_untagged_successfully">Device ”%1$s” untagged from user “%2$s” successfully</string>
+    <string name="device_alredy_untagged">Device "1$s" already untagged to user "2$s"</string>
+
+
+    <!-- Recurring alert-->
+    <string name="user_not_logged_in">Login to DeviceTracker app to use this device.</string>
+    <string name="session_expired">Your session has been timed out from DeviceTracker app.\nPlease login again</string>
+    <string name="unexpected_error">Unexpected Error happened\nPlease try again later</string>
+
+    <!-- About Us -->
+    <string name="about_us_text">TEK SYSTEMS GLOBAL SERVICES is a subsidiary of Allegis Group, the largest private talent management firm in the world. Our longstanding history and industry-leading position speak to our success in providing the IT staffing solutions, IT services and talent management insight required for you to actualize ROI and sustain a truly competitive advantage in a fast-changing market.</string>
+    <string name="about_us_url">www.teksystems.com</string>
+
+    <!-- Help -->
+    <string name="help_text">Please contact Praveen Baburaya</string>
+    <!--<string name="help_email_address">tek.mobility123@gmail.com</string>-->
+    <string name="action_done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="help_email_address">pbaburay@teksystems.com</string>
+</resources>

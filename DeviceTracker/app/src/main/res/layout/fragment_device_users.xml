@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_device_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="0dp"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/vertical_spacing">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

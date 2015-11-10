@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_session_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_session_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/session_time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/et_enter_session_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="number"
+                    android:maxLength="@string/settings_field_max_character"
+                    android:paddingRight="@dimen/padding_left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_alert_time_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_session_time"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_alert_time_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/alert_time_interval"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/et_enter_alert_time_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="number"
+                    android:maxLength="@string/settings_field_max_character"
+                    android:paddingRight="@dimen/padding_left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wrong_passwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_alert_time_interval"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_wrong_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/wrong_passwords"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/et_enter_wrong_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="number"
+                    android:maxLength="@string/settings_field_max_character"
+                    android:paddingRight="@dimen/padding_left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_default_passwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_wrong_passwords"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding">
+
+                <EditText
+                    android:id="@+id/et_default_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/default_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingRight="@dimen/padding_left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_show_passwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_default_passwords"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding">
+
+                <TextView
+                    android:id="@+id/tv_show_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/show_password"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+                <CheckBox
+                    android:id="@+id/et_show_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:paddingRight="@dimen/padding_left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/primary_text_default_material_dark"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_show_passwords"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding">
+
+                <Button
+                    android:id="@+id/bt_reset_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/reset_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/bt_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:paddingRight="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/save_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tracker_white">#F6F4EF</color>
+    <color name="device_tracker_accent_poppy">#DB2C46</color>
+    <color name="text_color_black">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_text_light">#C8C8C8</color>
+    <color name="sign_in_normal_stoke">#FDDB8F</color>
+    <color name="sign_in_pressed_stoke">#FCC344</color>
+    <color name="sign_in_disabled_stoke">#7FFDDB8F</color>
+    <color name="device_tracker_primary_gold">#C7901B</color>
+    <color name="dark_blue">#002F51</color>
+    <color name="light_blue">#AFC7D0</color>
+    <color name="device_tracker_icon_sky">#ADBFD6</color>
+    <color name="active_color">#0B9E18</color>
+
+    <color name="sign_in_shadow">#A8A8A8</color>
+
+    <!--Login Screen-->
+    <color name="app_background">#f7f7f7</color>
+    <color name="app_name">#002d56</color>
+    <color name="transparent_white">#fff</color>
+    <color name="login_layout_border">#cbcbcb</color>
+    <color name="hint_color">#999999</color>
+    <color name="device_tracker_icon_ice">#999999</color>
+    <color name="login_btn_color">#f8981d</color>
+    <color name="login_btn_border_color">#dd8310</color>
+    <color name="navigation_title">#002D56</color>
+    <color name="change_pwd_btn_border">#77d0e9</color>
+
+    <!-- Device User -->
+    <color name="logged_in">#d91400</color>
+    <color name="logged_out">#7bc345</color>
+    <color name="with_admin">#ea9401</color>
+    <color name="device_name">#333333</color>
+    <color name="timestamp">#666666</color>
+
+    <color name="welcome_text_color">#666666</color>
+    <color name="log_out_color">#FA7542</color>
+    <color name="tag_untag_button">#005AFF</color>
+</resources>

@@ -1,0 +1,213 @@
+<ScrollView
+    android:id="@+id/sv_new_user"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.teksystems.devicetracker.view.views.activities.NewUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/username"
+            android:inputType="textVisiblePassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/name"
+            android:inputType="textVisiblePassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <LinearLayout
+            android:id="@+id/ll_show_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_password"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cb_show_passwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/primary_text_default_material_dark"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cb_is_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/primary_text_default_material_dark"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_user"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cb_is_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/primary_text_default_material_dark"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/cancel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:enabled="false"
+                    android:text="@string/save"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

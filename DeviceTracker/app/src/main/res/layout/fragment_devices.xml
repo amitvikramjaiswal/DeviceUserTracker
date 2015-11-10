@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="0dp"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/vertical_spacing">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_new_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/layout_margin"
+            android:elevation="@dimen/elevation"
+            android:src="@drawable/ic_add"
+            app:borderWidth="0dp" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

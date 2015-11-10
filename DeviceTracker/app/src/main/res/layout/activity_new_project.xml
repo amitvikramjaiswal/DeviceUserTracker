@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_project_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
+
+                <EditText
+                    android:id="@+id/et_project_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/layout_margin"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/project_name_hint"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_project_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/recycler_view_margin"
+                    android:text="@string/project_description"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textColor="@color/timestamp" />
+
+                <EditText
+                    android:id="@+id/et_edit_project_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:gravity="top"
+                    android:lines="4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_project_details"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/bt_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/cancel_str"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/bt_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:paddingRight="@dimen/padding_left"
+                    android:singleLine="true"
+                    android:text="@string/save_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

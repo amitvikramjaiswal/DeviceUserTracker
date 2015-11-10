@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_welcome_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
+
+                <ImageView
+                    android:id="@+id/iv_welcome_title"
+                    android:layout_width="@dimen/navigation_image_padding"
+                    android:layout_height="@dimen/navigation_image_padding"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_app_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/padding_left"
+                    android:text="@string/navigation_drawer_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/app_name"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/login_padding"
+                android:paddingRight="@dimen/login_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corner_login"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:id="@+id/tv_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_left"
+                        android:gravity="center"
+                        android:text="@string/welcome_message"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/welcome_text_color"/>
+
+                    <TextView
+                        android:id="@+id/tv_thank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_left"
+                        android:gravity="center"
+                        android:text="@string/thank_you"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/app_name"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/layout_top">
+
+                        <LinearLayout
+                            android:id="@+id/ll_buttons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_change_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/btn_change_pwd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_change_password_icon"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_change_password"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:singleLine="true"
+                                        android:paddingTop="@dimen/padding"
+                                        android:text="@string/change_password"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/app_name"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/ll_log_out"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/bt_log_out"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_logout_icon"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:text="@string/log_out_message"
+                                        android:paddingTop="@dimen/padding"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/log_out_color"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

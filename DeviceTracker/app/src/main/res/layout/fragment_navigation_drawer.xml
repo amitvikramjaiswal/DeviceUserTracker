@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <ImageView
+            android:id="@+id/iv_navigation_image"
+            android:layout_width="@dimen/navigation_image_padding"
+            android:layout_height="@dimen/navigation_image_padding"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_app_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_left"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/navigation_drawer_title"
+            android:textColor="@color/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_navigation_drawer"
+        android:choiceMode="singleChoice"
+        android:divider="@color/hint_color"
+        android:dividerHeight="1dp"
+        tools:context=".NavigationDrawerFragment"/>
+
+</RelativeLayout>
+
+
